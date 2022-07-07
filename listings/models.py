@@ -6,10 +6,10 @@ from django.db import models
 
 # Create your models here.
 class Listing(models.Model):
-title = models.CharField(max_length=150)
-price = models.IntegerField()
-num_bedrooms = models.IntegerField()
-num_bathrooms = models.IntegerField()
-square_footage = models.IntegerField()
-address = models.CharField(max_length=100)
+    title = models.CharField(max_length=150, default='property')
+    price = models.IntegerField(default='0')
+    num_bedrooms = models.IntegerField(default='0')
+    num_bathrooms = models.IntegerField(default='0')
+    square_footage = models.IntegerField(default='0')
+    address = models.CharField(max_length=100, default='city')
 #image 
